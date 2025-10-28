@@ -1,5 +1,3 @@
-// const { createElement } = require("react");
-
 const submit = document.getElementById("btn");
 
 submit.addEventListener('click', (event)=>{
@@ -27,7 +25,6 @@ submit.addEventListener('click', (event)=>{
                     </div>
                 `;
                 container.appendChild(div);
-                let modalInstance = null;
                 container.addEventListener("click", (e) =>{
                     if(e.target.classList.contains("food-img")){
                         const mealId = e.target.getAttribute("data-id");
@@ -44,7 +41,7 @@ submit.addEventListener('click', (event)=>{
                                     <img src="${meal.strMealThumb}" class="img-fluid mb-3 rounded food-img" alt="${meal.strMeal}">
                                     <h6>Category: ${meal.strCategory}</h6>
                                     <h6>Area: ${meal.strArea}</h6>
-                                    <p><strong>Instructions:</strong><br>${meal.strInstructions}</p>
+                                    <p><strong>Instructions:</strong><br>${meal.strInstructions.slice(0,100)}</p>
                                     <a href="${meal.strYoutube}" target="_blank" class="btn btn-danger mt-2">
                                         Watch on YouTube
                                     </a>
@@ -58,7 +55,6 @@ submit.addEventListener('click', (event)=>{
                             .catch(err => console.log(err));
                     }
                 });
-
             });
 
     })
@@ -66,13 +62,4 @@ submit.addEventListener('click', (event)=>{
         console.log(err);
     });
 
-});
-
-const modalElement = document.getElementById("foodModal");
-modalElement.addEventListener('hidden.bs.modal', function () {
-    document.body.classList.remove('modal-open');
-    const backdrops = document.querySelectorAll('.modal-backdrop');
-    backdrops.forEach(backdrop => backdrop.remove());
-
-    modalInstance = null;
 });
