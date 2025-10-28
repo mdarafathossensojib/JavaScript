@@ -1,0 +1,79 @@
+body {
+  padding-top: 80px;
+}
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+nav{
+    background-color: #c52d2f;
+}
+.nav-logo {
+  width: 50px;
+}
+.nav-link {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 6px;
+}
+nav .container {
+  max-width: 1000px;
+}
+.social-link i{
+  color: aqua;
+}
+.skills-page .container{
+  max-width: 1000px;
+}
+.resume {
+  background-color: aqua;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 5px 15px;
+  margin-left: 7px;
+  border-radius: 8px;
+}
+.resume a{
+  text-decoration: none;
+  color: white;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+input.search-form{
+  padding: 5px 10px;
+  width: 120px;
+  border-radius: 4px;
+  margin-left: 12px;
+  margin-top: 5px;
+  border: none;
+  outline: none;
+}
+.search{
+    height: 50vh;
+}
+.search .container{
+    text-align: center;
+}
+input.search-food {
+    box-shadow: 2px 2px 4px 2px gray;
+    border: none;
+    border-radius: 20px;
+    width: 300px;
+    padding: 8px 20px;
+    outline: none;
+}
+button.btn.btn-danger {
+    width: 120px;
+    font-weight: 700;
+    padding: 8px;
+    border-radius: 20px;
+}
+img.food-img {
+    width: 200px;
+}
