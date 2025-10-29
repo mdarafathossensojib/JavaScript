@@ -1,4 +1,3 @@
-
 // Browser Console for Output
 
 let mark = prompt("Enter Your mark: ");
