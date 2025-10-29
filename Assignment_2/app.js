@@ -47,10 +47,7 @@ submit.addEventListener('click', (event)=>{
                                     </a>
                                 `;
 
-                                if(!window.modalInstance){
-                                    window.modalInstance = new bootstrap.Modal(document.getElementById("foodModal"));
-                                }
-                                window.modalInstance.show();
+                                new bootstrap.Modal(document.getElementById("foodModal")).show();
                             })
                             .catch(err => console.log(err));
                     }
@@ -61,5 +58,4 @@ submit.addEventListener('click', (event)=>{
     .catch((err) => {
         console.log(err);
     });
-
 });
